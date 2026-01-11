@@ -75,8 +75,9 @@ export class Home implements OnInit, OnDestroy {
 
   downloadResume() {
     const link = document.createElement('a');
-    link.href = 'Resume.pdf';
+    link.href = '/Resume.pdf';
     link.download = 'Jigyasa-Gohil-Resume.pdf';
     link.click();
   }
+  
 }

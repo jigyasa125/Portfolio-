@@ -159,10 +159,15 @@ export class Projects {
     }
   }
 
-  downloadResume() {
-    const link = document.createElement('a');
-    link.href = 'Resume.pdf';
-    link.download = 'Jigyasa-Gohil-Resume.pdf';
-    link.click();
-  }
+openResume() {
+  window.open('/Resume.pdf', '_blank');
+}
+
+downloadResume() {
+  const link = document.createElement('a');
+  link.href = '/Resume.pdf';
+  link.download = 'Jigyasa-Gohil-Resume.pdf';
+  link.click();
+}
+
 }
